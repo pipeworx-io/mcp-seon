@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-seon",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "SEON MCP — wraps the SEON fraud / digital-footprint enrichment APIs (seon.io)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-seon": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "seon"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-seon.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/seon",
   "pipeworx": {
-    "sourceHash": "v1-707eab363c3d087001a8c1c6c9bc65d29bff5b4b9896fd6f232fa1e1f43538f0",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "seon",
+    "gatewaySlug": "seon",
+    "sourceHash": "v1-c4135bea8cd27be87f138572a72be91a0a615a2626e67987746ebd00b09c66c5",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
