@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-seon",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SEON MCP — wraps the SEON fraud / digital-footprint enrichment APIs (seon.io)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "seon",
     "gatewaySlug": "seon",
-    "sourceHash": "v1-c4135bea8cd27be87f138572a72be91a0a615a2626e67987746ebd00b09c66c5",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-9e7e276c35e77cf3674b6f226335bbc21e0f6cb9c84af320f7f35507f2812e44",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
